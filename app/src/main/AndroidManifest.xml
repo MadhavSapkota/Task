@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.learn.task">
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	
+	<application
+		android:name="com.learn.task.app.AppApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/googleg_standard_color_18"
+		android:label="@string/app_name"
+		android:usesCleartextTraffic="true"
+		android:requestLegacyExternalStorage="true"
+		android:roundIcon="@drawable/googleg_standard_color_18"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme"
+		android:hardwareAccelerated="true"
+		tools:targetApi="n">
+		
+		
+		<activity
+			android:name="com.learn.task.activity.country.CountryActivity"
+			android:exported="true"
+			android:noHistory="true"
+			android:theme="@style/AppTheme.NoActionBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				
+				<category android:name="android.intent.category.LAUNCHER" />
+				
+			</intent-filter>
+		</activity>
+		<activity android:name="com.learn.task.activity.country_details.CountryDetailsActivity" android:noHistory="true"/>
+		<activity android:name="com.learn.task.activity.network.NetWorkActivity" />
+		
+		
+	</application>
+</manifest>

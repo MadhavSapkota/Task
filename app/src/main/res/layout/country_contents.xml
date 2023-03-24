@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	
+	android:layout_width="match_parent"
+	android:background="@color/whiteOpacity"
+	android:layout_height="match_parent">
+	
+	<RelativeLayout
+		android:id="@+id/rltoolbar"
+		style="@style/toolbar_header"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorOrange">
+		
+		<ImageView
+			android:id="@+id/ivBack"
+			android:layout_width="@dimen/_30sdp"
+			android:layout_height="@dimen/_30sdp"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="@dimen/_10sdp"
+			android:background="@drawable/ic_back" />
+		
+		<TextView
+			android:id="@+id/tvHeading"
+			style="@style/text_16_grammar_text_toolbar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/country_list" />
+	</RelativeLayout>
+	
+
+	
+	
+	
+	<WebView
+		android:id="@+id/webView"
+		android:layout_below="@+id/rltoolbar"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="@dimen/_7sdp"
+		android:background="@color/whiteOpacity"
+		android:layout_marginRight="@dimen/_5sdp"
+		android:layout_height="match_parent" />
+	
+	
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="@style/appProgressbar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true" />
+</RelativeLayout>

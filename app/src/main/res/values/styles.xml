@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorSurface">@color/colorPrimary</item>
+    </style>
+    
+    <style name="text_16_grammar_text_toolbar">
+        <item name="android:textSize">23sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_semibold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="grammar_dashboard_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blackColor</item>
+    </style>
+    
+    <style name="text_16_black_header1">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/mukta_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+    </style>
+    
+    <style name="text_12_shades">
+        <item name="android:textSize">13.7sp</item>
+        <item name="android:fontFamily">@font/mukta_regular</item>
+        <item name="android:textColor">@color/black_80_Opacity</item>
+    </style>
+    
+    <style name="text_12_black_1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/mukta_regular</item>
+        <item name="android:textColor">@color/colorgrayshadow</item>
+    </style>
+    
+        <style name="toolbar_header">
+            <item name="android:layout_height">@dimen/_50sdp</item>
+        </style>
+    
+        <style name="text_dashboard_subject_subtitle">
+            <item name="android:textSize">10sp</item>
+            <item name="android:textColor">@color/blackColor</item>
+            <item name="android:fontFamily">@font/archivonarrow_variablefont_wght</item>
+        </style>
+    
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+	
+	
+	<RelativeLayout
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout
+			
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorOrange">
+			
+			<RelativeLayout
+				android:id="@+id/rltoolbar"
+				style="@style/toolbar_header"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:layout_marginStart="@dimen/_14sdp"
+				android:layout_marginEnd="@dimen/_14sdp">
+				
+				<TextView
+					android:id="@+id/tvHeading"
+					style="@style/text_16_grammar_text_toolbar"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:text="@string/country_list" />
+			</RelativeLayout>
+		</RelativeLayout>
+	
+	</RelativeLayout>
+	
+	
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/toolbar"
+		tools:ignore="ScrollViewCount">
+		
+		<RelativeLayout
+			android:id="@+id/ltoolBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/toolbar"
+			android:layout_marginTop="@dimen/_4sdp"
+			android:orientation="vertical">
+			
+		
+			
+			<include
+				android:id="@+id/includesGrammarList"
+				layout="@layout/dashboard_recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginLeft="@dimen/_14sdp"
+				android:layout_marginEnd="@dimen/_10sdp"
+				android:layout_marginRight="@dimen/_14sdp"
+				android:layout_marginBottom="@dimen/_5sdp" />
+			
+			
+		</RelativeLayout>
+	</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
